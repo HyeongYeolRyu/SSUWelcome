@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:text="ID : "/>
+        <EditText
+            android:id="@+id/inputID"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="점포명을 입력하세요"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="15dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="PW : "/>
+        <EditText
+            android:id="@+id/inputPW"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호를 입력하세요"
+            android:gravity="center"
+            android:inputType="numberPassword"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:textSize="20dp"
+        android:text="로그인"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:textSize="15dp"
+        android:text="아직 회원이 아니신가요?"/>
+    <TextView
+        android:id="@+id/signUpBtn"
+        android:onClick="signUpBtnClicked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:text="회원가입"
+        android:textColor="@color/colorPrimary" />
+
+</LinearLayout>

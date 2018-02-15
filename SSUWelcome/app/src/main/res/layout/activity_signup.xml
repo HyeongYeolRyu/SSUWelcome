@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:text="ID : "/>
+        <EditText
+            android:id = "@+id/signupID"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="점포명을 입력하세요"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="15dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="PW : "/>
+        <EditText
+            android:id = "@+id/signupPW"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호를 입력하세요"
+            android:gravity="center"
+            android:inputType="numberPassword"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="15dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/submitSignUpBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:textSize="20dp"
+            android:text="가입신청"/>
+        <Button
+            android:id="@+id/notSubmitSignUpBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:textSize="20dp"
+            android:text="취소"/>
+    </LinearLayout>
+
+
+</LinearLayout>

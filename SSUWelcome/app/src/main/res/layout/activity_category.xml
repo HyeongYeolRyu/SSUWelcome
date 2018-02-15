@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="카테고리"
+        android:layout_gravity="center"
+        android:textSize="60dp"
+        android:textStyle="bold"
+
+        />
+
+    <GridLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="3"
+        android:columnCount="2"
+        android:layout_gravity="center"
+
+        >
+
+        <ImageButton
+            android:layout_width="176dp"
+            android:layout_height="156dp"
+            android:src="@drawable/korea"
+            android:scaleType="centerInside"
+            android:onClick="koreanfoodclick"
+            android:background="#00000000"
+            />
+        <ImageButton
+            android:layout_width="176dp"
+            android:layout_height="156dp"
+            android:src="@drawable/japan"
+            android:scaleType="centerInside"
+            android:onClick="japanesefoodclick"
+            android:background="#00000000"
+            />
+        <ImageButton
+            android:layout_width="176dp"
+            android:layout_height="156dp"
+            android:src="@drawable/west"
+            android:scaleType="centerInside"
+            android:onClick="westernfoodclick"
+            android:background="#00000000"
+            />
+        <ImageButton
+            android:layout_width="176dp"
+            android:layout_height="156dp"
+            android:src="@drawable/china"
+            android:scaleType="centerInside"
+            android:onClick="chinesefoodclick"
+            android:background="#00000000"
+            />
+
+        <ImageButton
+            android:layout_width="176dp"
+            android:layout_height="156dp"
+            android:src="@drawable/cafe"
+            android:scaleType="centerInside"
+            android:onClick="cafeclick"
+            android:background="#00000000"
+            />
+        <ImageButton
+            android:layout_width="176dp"
+            android:layout_height="156dp"
+            android:src="@drawable/etc"
+            android:scaleType="centerInside"
+            android:onClick="etcclick"
+            android:background="#00000000"
+            />
+
+    </GridLayout>
+
+</LinearLayout>
